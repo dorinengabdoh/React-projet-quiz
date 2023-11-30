@@ -9,7 +9,7 @@ function Home() {
     <div>
       <div className="heading">
         <div>
-          <h1>React Quiz App</h1>
+          <h1>Quiz App</h1>
           <p className="heading__p1">
             A simple quiz application coded in React.js
           </p>
@@ -17,8 +17,8 @@ function Home() {
         <div>
           <h1>Instructions</h1>
           <p className="heading__p2">
-            You will be asked questions and you will answer either True or
-            False.
+             You will answer either True or
+            False to all the 10 questions.
           </p>
         </div>
         <Link to="/Questions/1" className="btn">
