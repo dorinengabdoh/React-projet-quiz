@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import Context from './Context';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import Context from "./Context";
 
 function Result() {
   const { count } = useContext(Context);

@@ -1,13 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import './App.css';
-import Home from './assets/component/Home';
-import Questions from './assets/component/Questions';
-import Context from './assets/component/Context';
-import Result from './assets/component/Result';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import "./App.css";
+import Home from "./assets/component/Home";
+import Questions from "./assets/component/Questions";
+import Context from "./assets/component/Context";
+import Result from "./assets/component/Result";
 
-
-let number =1;
+let number = 1;
 function App() {
   const [count, setCount] = useState(0);
   const [questions, setQuestions] = useState([]);
@@ -17,9 +16,9 @@ function App() {
 
     if (number === 1) {
       fetch(api)
-      .then((response) => response.json())
-      .then((questions) => setQuestions(questions.results));
-      number +=1;
+        .then((response) => response.json())
+        .then((questions) => setQuestions(questions.results));
+      number += 1;
     }
   };
 
